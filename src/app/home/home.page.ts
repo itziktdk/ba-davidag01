@@ -30,12 +30,14 @@ export class HomePage {
   {
     this.navCtrl.navigateForward('license');
   }
+
   goLogin()
   {
     this.navCtrl.navigateForward('login');
   }
-  goDocs()
+
+  goMange()
   {
-    this.navCtrl.navigateForward('regform3');
+    this.navCtrl.navigateForward('pharmanage');
   }
 }

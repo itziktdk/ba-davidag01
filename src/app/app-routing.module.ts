@@ -99,7 +99,31 @@ const routes: Routes = [
   {
     path: 'news',
     loadChildren: () => import('./news/news.module').then( m => m.NewsPageModule)
+  },  {
+    path: 'register1',
+    loadChildren: () => import('./register1/register1.module').then( m => m.Register1PageModule)
+  },
+  {
+    path: 'realvouchers',
+    loadChildren: () => import('./realvouchers/realvouchers.module').then( m => m.RealvouchersPageModule)
+  },
+  {
+    path: 'pharmanage',
+    loadChildren: () => import('./pharmanage/pharmanage.module').then( m => m.PharmanagePageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'login2',
+    loadChildren: () => import('./login2/login2.module').then( m => m.Login2PageModule)
+  },
+  {
+    path: 'pharmprofile',
+    loadChildren: () => import('./pharmprofile/pharmprofile.module').then( m => m.PharmprofilePageModule)
   }
+
 ];
 
 @NgModule({
