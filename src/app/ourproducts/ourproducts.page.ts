@@ -19,7 +19,10 @@ export class OurproductsPage implements OnInit {
   {
     this.navCtrl.navigateBack('home');
   }
-
+  goProductsoils()
+  {
+    this.navCtrl.navigateBack('oils');
+  }
   async showModal() {
     const modal = await this.modalCtrl.create({
       component: ProductmodalPage,

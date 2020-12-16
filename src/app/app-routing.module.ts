@@ -78,16 +78,28 @@ const routes: Routes = [
   {
     path: 'password',
     loadChildren: () => import('./signup/password/password.module').then( m => m.PasswordPageModule)
-  },  {
+  },
+  {
     path: 'productcategories',
     loadChildren: () => import('./productcategories/productcategories.module').then( m => m.ProductcategoriesPageModule)
   },
   {
     path: 'ourproducts',
     loadChildren: () => import('./ourproducts/ourproducts.module').then( m => m.OurproductsPageModule)
+  },
+  {
+    path: 'oils',
+    loadChildren: () => import('./ourproducts/oils/oils.module').then( m => m.OilsPageModule)
   }
-
-
+  ,
+  {
+    path: 't20c4',
+    loadChildren: () => import('./ourproducts/t20c4/t20c4.module').then( m => m.T20c4PageModule)
+  },
+  {
+    path: 'news',
+    loadChildren: () => import('./news/news.module').then( m => m.NewsPageModule)
+  }
 ];
 
 @NgModule({
@@ -97,4 +109,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-

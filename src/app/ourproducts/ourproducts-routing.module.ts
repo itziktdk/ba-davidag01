@@ -7,6 +7,14 @@ const routes: Routes = [
   {
     path: '',
     component: OurproductsPage
+  },
+  {
+    path: 't20c4',
+    loadChildren: () => import('./t20c4/t20c4.module').then( m => m.T20c4PageModule)
+  },
+  {
+    path: 'oils',
+    loadChildren: () => import('./oils/oils.module').then( m => m.OilsPageModule)
   }
 ];
 

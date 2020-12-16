@@ -1,6 +1,6 @@
 ion-content
 {
-  --background: #fff url('../../assets/imgs/bg.png') no-repeat center center / cover;
+  --background: #fff url('../../../assets/imgs/bg.png') no-repeat center center / cover;
   .holder
   {
    
@@ -77,18 +77,22 @@ ion-content
             }
         }
     }
-
-    .the-list
-    {
-      /*   height: 55vh;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        white-space: nowrap;
-        &::-webkit-scrollbar
-        {
-            display: none;
-        } */
-    }
+.super {
+    //background-color: #ff7300;
+    width: 150px !important;
+    --background: rgba(253, 143, 0, 0.867);
+}
+    // .the-list
+    // {
+    //   /*   height: 55vh;
+    //     overflow-x: hidden;
+    //     overflow-y: scroll;
+    //     white-space: nowrap;
+    //     &::-webkit-scrollbar
+    //     {
+    //         display: none;
+    //     } */
+    // }
       
   }
 }

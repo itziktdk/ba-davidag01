@@ -24,4 +24,13 @@ export class ProductcategoriesPage implements OnInit {
     this.navCtrl.navigateBack('ourproducts');
   }
 
+  goProductsOils()
+  {
+    this.navCtrl.navigateBack('oils');
+  }
+
+  goProductst20()
+  {
+    this.navCtrl.navigateBack('t20c4');
+  }
 }

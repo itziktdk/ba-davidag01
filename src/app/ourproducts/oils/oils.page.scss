@@ -1,6 +1,6 @@
 ion-content
 {
-  --background: #fff url('../../assets/imgs/bg.png') no-repeat center center / cover;
+  --background: #fff url('../../../assets/imgs/bg.png') no-repeat center center / cover;
   .holder
   {
    
@@ -78,17 +78,17 @@ ion-content
         }
     }
 
-    .the-list
-    {
-      /*   height: 55vh;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        white-space: nowrap;
-        &::-webkit-scrollbar
-        {
-            display: none;
-        } */
-    }
+    // .the-list
+    // {
+    //   /*   height: 55vh;
+    //     overflow-x: hidden;
+    //     overflow-y: scroll;
+    //     white-space: nowrap;
+    //     &::-webkit-scrollbar
+    //     {
+    //         display: none;
+    //     } */
+    // }
       
   }
 }
