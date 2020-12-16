@@ -73,7 +73,7 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: () => import('./signup/login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
     path: 'password',
@@ -99,7 +99,8 @@ const routes: Routes = [
   {
     path: 'news',
     loadChildren: () => import('./news/news.module').then( m => m.NewsPageModule)
-  },  {
+  },
+  {
     path: 'register1',
     loadChildren: () => import('./register1/register1.module').then( m => m.Register1PageModule)
   },

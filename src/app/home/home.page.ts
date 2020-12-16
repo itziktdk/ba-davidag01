@@ -40,4 +40,8 @@ export class HomePage {
   {
     this.navCtrl.navigateForward('pharmanage');
   }
+  goNews()
+  {
+    this.navCtrl.navigateForward('news');
+  }
 }

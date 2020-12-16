@@ -16,7 +16,7 @@
           <ion-icon name="chatbubbles-outline" *ngIf="step3"></ion-icon>
           <ion-icon name="checkmark-circle" *ngIf="!step1 && !step2 && !step3"></ion-icon>
           <ion-icon name="" *ngIf="step3init "></ion-icon>
-          <span>פרטים אישים</span>
+          <span>שאלון מטופל</span>
         </ion-col>
         <ion-col class="processing ion-text-center">
           <ion-icon name="document-attach-outline" *ngIf="step2"></ion-icon>
@@ -131,9 +131,14 @@
         <ion-col size="6">
           <div class="input-item">
             <ion-item lines="none">
-              <ion-input type="text" class="ion-text-center" placeholder="תוקף מרשם
+              <!-- <ion-input type="text" class="ion-text-center" placeholder="תוקף מרשם
 
-              "></ion-input>
+              "></ion-input> -->
+              <ion-item lines=none>
+                <ion-label class="ion-align-self-center ion-text-center" style="--background:#fff; color:#333333"></ion-label>
+                <ion-datetime style="font-size: smaller;" monthValues="1,2,3,4,5,6,7,8,9,10,11,12" yearValues="2021,2022,2023" value="" placeholder="בחר תאריך">
+                </ion-datetime>
+              </ion-item>
             </ion-item>
           </div>
         </ion-col>
@@ -151,7 +156,8 @@
       <div class="btns-holder ion-padding-top">
         <ion-row>
           <ion-col size="4">
-            <div class="btn ion-text-center">
+            <input style="display: none;" id="IDfileinput" type="file" (change)="uploadImage($event.target.files)" class="filyLIC" />
+            <div class="btn ion-text-center" id="uploadLic" (click)="presentActionSheet('filyLIC')">
               <div class="img-holder">
                 <img src="assets/imgs/document.png" alt="">
               </div>
@@ -160,7 +166,8 @@
             </div>
           </ion-col>
           <ion-col size="4">
-            <div class="btn ion-text-center">
+            <input style="display: none;" id="IDfileinput" type="file" (change)="uploadImage($event.target.files)" class="filyID" />
+            <div class="btn ion-text-center" id="uploadLic" (click)="presentActionSheet('filyID')">
               <div class="img-holder">
                 <img src="assets/imgs/document.png" alt="">
               </div>
@@ -170,7 +177,8 @@
             </div>
           </ion-col>
           <ion-col size="4">
-            <div class="btn ion-text-center">
+            <input style="display: none;" id="IDfileinput" type="file" (change)="uploadImage($event.target.files)" class="filyREC" />
+            <div class="btn ion-text-center" id="uploadLic" (click)="presentActionSheet('filyREC')">
               <div class="img-holder">
                 <img src="assets/imgs/document.png" alt="">
               </div>

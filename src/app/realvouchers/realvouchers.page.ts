@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./realvouchers.page.scss'],
 })
 export class RealvouchersPage implements OnInit {
-  category:any = "s2";
+  category: any = 's2';
   constructor(private modalCtrl: ModalController) { }
 
   ngOnInit() {
@@ -27,7 +27,7 @@ export class RealvouchersPage implements OnInit {
 
     return await modal.present();
   }
-  
+
 
 
 }

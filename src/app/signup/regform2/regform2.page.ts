@@ -25,13 +25,13 @@ export class Regform2Page implements OnInit {
 
   capturedSnapURL: string;
 
-  
+
   cameraOptions: CameraOptions = {
     quality: 20,
     destinationType: this.camera.DestinationType.DATA_URL,
     encodingType: this.camera.EncodingType.JPEG,
     mediaType: this.camera.MediaType.PICTURE
-  }
+  };
 
    // File upload task
   fileUploadTask: AngularFireUploadTask;

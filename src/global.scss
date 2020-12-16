@@ -25,11 +25,12 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-
-
-.white {
-    color: #ffffff;
+@font-face {
+    font-family: 'IDAHC39M';
+    src: url('/src/assets/fonts/barcode.ttf') format('truetype');
 }
+
+
 
 .modal-wrapper
 {
@@ -75,16 +76,13 @@
     justify-content: space-between;
 }
 
-ion-content {
-    --background: url('./assets/imgs/bg.png') no-repeat 100% 100%;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-
+.fonty {
+    font-family: 'IDAHC39M Code 39 Barcode';
+}
 
 ion-button
 {
+    
     text-transform: none !important;
 }
 
@@ -94,6 +92,17 @@ ion-button
     overflow: hidden;
 }
 
+
+.the-form
+{
+    .input-item
+    {
+        ion-item
+        {
+            --border-radius: 30px;
+        }
+    }
+}
 
 .search-holder
 {
@@ -129,6 +138,30 @@ ion-button
             --border-radius: 15px;
             font-size: 1rem !important;
             min-height: 3rem !important;
+            ion-label {
+                margin: 0 !important;
+            }
+            --indicator-height:0  !important;
+        }
+    }
+    }
+
+
+    .segments-holder2
+    {
+    padding: 0 10px !important;
+    ion-segment
+    {
+   
+
+        ion-segment-button
+        { 
+            --background-checked: white;
+            --background: #BDBDBD;
+            --border-radius: 5px;
+            --color-checked: #4F4F4F;
+            font-size: 1rem !important;
+            min-height: 30px !important;
             ion-label {
                 margin: 0 !important;
             }
@@ -208,6 +241,6 @@ ion-fab-button
     --border-style: solid;
 }
 
-.modalfull {
-    width:100%; height:100%;
+ion-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
