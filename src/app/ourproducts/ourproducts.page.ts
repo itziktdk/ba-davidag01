@@ -9,12 +9,12 @@ import { ModalController, NavController } from '@ionic/angular';
 })
 export class OurproductsPage implements OnInit {
 
-  constructor(private navCtrl: NavController,private modalCtrl: ModalController) { }
+  constructor(private navCtrl: NavController, private modalCtrl: ModalController) { }
 
   ngOnInit() {
   }
 
-   
+
   goHome()
   {
     this.navCtrl.navigateBack('home');
